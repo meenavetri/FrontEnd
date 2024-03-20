@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lengthcpnverter</title>
+</head>
+
+</html>
+<body>
+
+
+<div id="wrap">
+    <h2 >COUNT THE NUMBER IN PARAGRAPH</h2>
+    <textarea  id="inputs" name="freedom" rows="50" cols="50">
+type here....
+</textarea>
+    <div>
+        <button type="submit" onclick="counter()">
+            calculate words
+        </button>
+    </div>
+    <div id="result">
+
+    </div>
+</div>
+    <script>
+        function counter(){
+            let para=document.getElementById("inputs").value
+            let para1=para.trim()
+            let para2=para1.split(' ')
+            let len=para2.length
+            let result=document.getElementById("result")
+            result.innerHTML="No.of.words is " +len
+        }
+    </script>   
+</body>
+</html>
