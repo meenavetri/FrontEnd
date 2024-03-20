@@ -1,0 +1,124 @@
+:root{
+    --gray:#888888;
+    --white:#ffffff;
+    --pink:#d14d72;
+    --blue:#8785A2;
+    --peach:#EBD5D5;
+}
+body , h2,p{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--peach);
+}
+.landing{
+    background-image: url('logo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header a{
+    text-decoration: none;
+    color:var(--pink) ;
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+
+    align-items: center;
+}
+nav a{
+    flex: 1;
+    min-width: 120px;
+}
+nav a:hover{
+    color:black
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: black;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--pink);
+}
+.maintext div{
+    margin-top: 0.75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    border: none;
+    padding: 0.7em;
+    color:white;
+    background-color: var(--pink);
+}
+.Products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(309px,1fr));
+    background-color:var(--peach)
+}
+#productheading,#AboutUs{
+    background-color: var(--peach);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+th{
+    color: var(--pink);
+    font-size: 1.8em;
+}
+table{
+    width:100%;
+    padding: 1em;
+}
+.Products tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+.Products td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.Products td:nth-child(2){
+    justify-self: right;
+}
+.Cosmetics{
+    grid-row: span 2;
+    margin-bottom: 40px;
+}
+p{
+    background-color: var(--peach);
+    text-align: center;
+    font-size: small;
+    padding:15px;
+    margin-bottom: 30px;
+}
+#AboutUs, #productheading{
+    color: #d14d72;
+}
+footer{
+    margin-bottom: 30px;
+    font-size: .8em;
+}
