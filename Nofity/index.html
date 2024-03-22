@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="note.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>NOTIFY</h1>
+        <p>Carry your notes online</p>
+    </div>
+    
+        <button class="addbutton" id="addpopup">+</button>
+   
+    <div class="sample">
+        <div class="popupsample">
+            <h1>Notes title</h1>
+            <h5>date</h5>
+            <p>description about the work/things to remember</p>
+            <button id="deletebutton" onclick="deleteit(event)">Delete</button>
+        </div>
+        
+    </div>
+    <div class="overlay">
+    </div>
+    <div class="popup">
+        <h2>ADD BOOK</h2>
+        <form >
+            <input type="text" placeholder="NOTE TITLE" id="notetitleinput">
+            <input type="text" placeholder="date" id="dateofevent">
+            <textarea placeholder="short-discription" id="description" ></textarea>
+            <button id="add">ADD</button>
+            <button id="cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

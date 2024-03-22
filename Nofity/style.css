@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#FFE6E6 ;
+}
+.container{
+    background-color: #AD88C6;
+    padding: 10px;
+}
+.sample{
+    padding: 10px;
+}
+.popupsample{
+    padding: 15px;
+    width: 35%;
+    background-color:#E1AFD1 ;
+    margin: 30px;
+    border-radius: 10px;
+    text-align:left;
+    display: inline-block;
+    vertical-align: top;
+}
+.popupsample h1{
+    color: #7469B6;
+}
+.popupsample button{
+    padding: 10px;
+    background-color:#7469B6 ;
+    color: #E1AFD1;
+    border-radius: 10px;
+    margin-top:15px ;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+.addbutton{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #7469B6;
+    color: #E1AFD1;
+    border-radius: 100%;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+.overlay{
+    background-color: #AD88C6;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup{
+    background-color: #7469B6;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 2;
+    display: none;
+}
+.popup input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    font-size:20px ;
+    border-bottom: solid black 2px;
+}
+.popup textarea{
+    background: transparent;
+    width: 100%;
+    margin: 5px;
+    font-size:20px ;
+}
+.popup input::placeholder{
+    color: black;
+}
+.popup textarea::placeholder{
+    color: black;
+}
+.popup button{
+    background-color: #AD88C6;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFE6E6;
+    cursor: pointer;
+}
+.popup input:focus{
+    outline: none;
+}
+.popup textarea:focus{
+    outline: none;
+}
