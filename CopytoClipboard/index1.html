@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy To Clip Board</title>
+    <link rel="icon" href="copy icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <span class="copied">Copied!</span>
+    <div class="container">
+        <!-- <span class="copied">Copied!</span> -->
+        <h1>copy to clip board</h1>
+        <textarea  id="textfield" cols="30" rows="10" class="text-filed" placeholder="Type something..."></textarea>
+        <br>
+        <button class="copy-btn">Copy <i class="fa-solid fa-clone"></i></button>
+        <!-- <span class="copied">Copied!</span> -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            function add(){
+                $(".copied").addClass("bounce-effect");
+            }
+            function remove(){
+                $(".copied").removeClass("bounce-effect");
+            }
+            $(".copy-btn").click(function(){
+                $("#textfield").select();
+                document.execCommand("copy");
+                add();
+                setTimeout(remove,800);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #A1C398;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input,textarea,button{
+    font-family: inherit;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 530px;
+    padding: 25px;
+    background-color: #C6EBC5;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px rgba(83, 87, 95, 0.25);
+}
+h1{
+    padding: 20px 0;
+    color: #FA7070;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-field{
+   height: 270px;
+   margin: 20p 0;
+   padding: 10px;
+   background: transparent;
+   border: 3px solid #FA7070;
+   font-size: 16px;
+   font-weight: 400;
+   outline: none;
+   resize: none;
+}
+textarea{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: transparent;
+    padding: 20px;
+   border: 2px solid #FA7070;
+}
+button{
+    padding: 10px 15px;
+    color: #f3f4f7;
+    background-color: #A1C398;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.copybtn{
+    background-color:#A1C398;
+    border-radius: 10px;
+}
+.copybtn i{
+    padding-left: 10px;
+}
+.copybtn:active{
+    transform: scale(0.98);
+}
+span.copied{
+    display: block;
+    margin-top:50px ;
+    text-align: center;
+    font-size:26px ;
+    color: #858585;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+span.bounce-effect{
+    animation: bounceIn 0.8s linear;
+}
+@keyframes bounceIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    40%{
+        transform: scale(0.9);
+    }
+    60%{
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    80%{
+        transform: scale(0.97);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
